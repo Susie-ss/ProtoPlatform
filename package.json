@@ -1,0 +1,21 @@
+{
+  "name": "proto-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 原型设计 & 托管协作一体化平台",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "dev:web": "pnpm --filter @proto-platform/web dev",
+    "dev:server": "pnpm --filter @proto-platform/server start:dev",
+    "build:web": "pnpm --filter @proto-platform/web build",
+    "build:server": "pnpm --filter @proto-platform/server build"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
